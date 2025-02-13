@@ -1,39 +1,11 @@
-# SQL Father - 模拟数据生成器（后端）
-
-> SQL 之父项目：快速生成 SQL 和模拟数据，大幅提高开发测试效率！
->
-> 前后端全栈项目 By [程序员鱼皮](https://docs.qq.com/doc/DUFFRVWladXVjeUxW)
->
-> **制作不易，请勿商用和二次售卖！！！**
+# SQL Generation - 代码生成器（后端）
 
 
-
-在线体验：[http://sqlfather.yupi.icu](http://sqlfather.yupi.icu)
-
-视频演示（使用教程）：[https://www.bilibili.com/video/BV1eP411N7B7/](https://www.bilibili.com/video/BV1eP411N7B7/)
-
-
-
-> 如果您觉得本项目有帮助，给 UP 主一个关注和三连就是最大的支持，谢谢！
-
-
-
-前端代码仓库：[https://github.com/liyupi/sql-father-frontend-public](https://github.com/liyupi/sql-father-frontend-public)
-
-后端代码仓库：[https://github.com/liyupi/sql-father-backend-public](https://github.com/liyupi/sql-father-backend-public)
-
-![](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/1/1666090763987-f768817c-89d6-4326-b7e1-5ad06d5cc875-20221019132239543-20221019132502106-20221019132511275.png)
-
-⭐️ 我在自己的 [编程知识星球](https://yupi.icu) 内给大家详细解读了这个项目的创作思路 + 技术选型 + 系统设计 + 源码解读 + 简历写法分享，如果你希望把这个项目写到简历上、或者深入学习，欢迎 [加入我的星球](https://yupi.icu) 观看。
 
 
 ## 项目背景
 
-项目的创作起因就是鱼皮为了解决自己开发项目时反复写 SQL 建表和造数据的麻烦，顺便开源给大家一起来学习和完善~
-
-试想一下：如果我做新项目的时候，不用写建表 SQL、不用造数据，能直接得到一个造好了假数据的表，那该有多好！
-
-> 有同学问为什么项目不叫 SQL Mother？那我问问你为什么继承叫父类？
+项目的目的就是为了解决自己开发项目时反复写 SQL 建表和造数据的麻烦。
 
 
 
@@ -62,18 +34,6 @@
 5）可以直接使用现成的词库来建立字典表，或者作为研究用的数据集，并支持二次完善词库！
 
 ![](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/1/1666099806973-f48785e1-3d6c-49c9-a093-77c234d4f8b1-20221019132502586-20221019132511780.png)
-
-
-
-## 值得学习
-
-项目本身功能完整（分为用户前台和管理后台）、达到上线标准、架构设计清晰、目录结构规范。
-
-前端用到了复杂的嵌套 & 动态 & 可折叠表单、代码编辑器；后端用到了多种主流设计模式、AOP 切面鉴权等，还是非常值得朋友们学习的。
-
-> 也请大佬们请多多指教 🙏🏻
-
-
 
 ## 功能大全
 
@@ -127,23 +87,6 @@
 
 ## 技术栈
 
-### 前端
-
-主要技术：
-
-- React 18
-- Umi 4.x
-- Ant Design 4.x 组件库
-- Ant Design Pro Components 高级组件
-- TypeScript 类型控制
-- Eslint 代码规范控制
-- Prettier 美化代码
-
-依赖库：
-
-- monaco-editor 代码编辑器
-- copy-to-clipboard 剪切板复制
-
 
 
 ### 后端
@@ -176,28 +119,6 @@
 2. 修改 application.yml 中的数据库地址为自己的
 3. 安装完 Maven 依赖后，直接运行即可
 4. 已经编写好了 Dockerfile，支持 Docker 镜像部署。
-
-
-
-### 前端
-
-安装依赖：
-
-```bash
-npm run install
-```
-
-运行：
-
-```bash
-npm run dev
-```
-
-打包：
-
-```bash
-npm run build
-```
 
 
 
@@ -298,25 +219,13 @@ npm run build
 
 
 
-### 共享服务
-
-包括词库、表信息、字段信息共享，其实就是对这些实体的增删改查 web 服务，不多说了。
-
-
-
-## 更多讲解
-
-如果你希望获取该项目的完整详细讲解，欢迎加入 [鱼皮的编程知识星球](https://yupi.icu/) 。这是鱼皮的编程学习圈子，我在圈子内带大家从 0 到 1 分析解读这个项目、1 对 1 回答大家的问题。不仅让你也能独立做一个、还会教你怎么把这个项目写到简历上，项目经历 + 1。
-
-
-
 ## 贡献指南
 
 欢迎各位朋友参与贡献，还请先仔细阅读以下内容：
 
-1. 在贡献前，请确保你对项目的代码和架构设计有一定的了解，而不是凭直觉去修改代码
-2. 可以从修复 issues 区 bug、处理反馈意见（[https://support.qq.com/product/440825](https://support.qq.com/product/440825)）、扩展项目功能等角度参与贡献
-3. 在提交代码前，请务必遵循项目的代码格式、命名等规范，并且做到最小改动（不需要改的内容，一个字符都不要动）
+1. 在贡献前，请确保你对项目的代码和架构设计有一定的了解。
+2. 可以从修复 issues 区 bug、处理反馈意见、扩展项目功能等角度参与贡献。
+3. 在提交代码前，请务必遵循项目的代码格式、命名等规范，并且做到最小改动。
 
 
 
